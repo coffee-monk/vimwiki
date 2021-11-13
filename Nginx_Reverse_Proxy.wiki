@@ -1,0 +1,34 @@
+== Nginx_Reverse_Proxy ==
+
+* nginx.conf - primary configuration file
+
+=== Reverse_Proxy ===
+
+* set virtual hosts in conf.d/
+* point DNS to computer's IP address
+* RP accepts http requests and routes to web servers
+* can update header data of http request for server
+  - e.g. "proxy_set_header Host $host" 
+* proxy_pass http req to IP + PORT
+* requires ";" at end of line
+
+=== Example_Proxy ===
+
+server {
+  server_name testinglive.site www.testinglive.site;
+  
+  location / {
+    proxy_pass http://localhost:3000;
+    
+    proxy_set_header  X-Real-IP         $remote_addr;
+    proxy_set_header  Host              $host;
+    proxy_set_header  X-Forwarded-For   $proxy_add_x_forwarded_for;
+    proxy_set_header  X-Forwarded-Proto $scheme;
+    proxy_set_header  Accept-Encoding   "";
+    proxy_set_header  Proxy             "";
+  }
+}
+
+* Host - host URL the client used to connect (eg www.testinglive.site)
+* X-Forwarded-Port - port the client connected to on the proxy (eg 80 or 443 ) 
+* X-Forwarded-Proto - protocol the client used to connect to the proxy ( http or https )
