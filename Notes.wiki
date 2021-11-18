@@ -1,0 +1,9 @@
+== Scribitz: Quickbooks ==
+
+- scribitz website payment processing for transcription/captioning
+- get user data
+- quickbooks
+- crypto
+- copy scribitz website
+- where to store a video file (if it's secure store it on website)
+- need to store files somewhere
