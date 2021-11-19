@@ -1,0 +1,17 @@
+== Django ==
+
+== Install ==
+> pip install django
+
+=== Start Project ===
+> django-admin startproject ${project_name}
+- creates folder named ${project_name} 
+- go into ${project_name} subdir to run manage.py processes
+
+> python manage.py runserver 
+- runs the dev server
+
+=== URL Request ===
+* urls.py => receive requests and fires callback
+* views.py => resolves callbacks
+* URLs use regex

@@ -6,12 +6,14 @@
 * ":h vimwiki-mappings"
 * ":h vimwiki-syntax-headers"
 
-== Linux ==
+== Linux & DevOPs ==
 * [[SSH_Setup]]
 * [[Nginx_Reverse_Proxy]]
+* [[Web_App_Security]]
 
 == Scribitz ==
-[[Notes]]
+* [[Notes]]
 
-== Web App Security ==
-* OWASP: "https://owasp.org"
+== Python ==
+* [[pipenv]]
+* [[Django]]

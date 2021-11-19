@@ -1,0 +1,59 @@
+== PIPENV ==
+
+=== Install pipenv on OS ===
+
+> pip3 install pipenv
+
+> pip3 freeze
+* show list installed python packages 
+
+=== Create/Use Virtual Environment ===
+
+* go into empty project folder
+
+> pipenv shell
+* launch/enter pipenv shell virtual environment 
+* creates Pipfile in directory
+* virtual environment is always python3
+
+> pipenv install ${package}
+* install python package, recorded in Pipfile
+* creates Pipfile.lock
+
+> pipenv lock *r
+* show packages installed in Pipfile
+
+> pipenv uninstall ${package}
+* uninstalls package from Pipfile
+
+> pipenv install ${package} **dev
+* install dev dependency
+
+> exit
+* exits virtual environment
+
+=== Requirements.txt file ===
+
+* requirements.txt = list of packages for installation
+
+> pipenv *r ./requirements.txt
+* install package list
+
+=== Lock dependencies ===
+
+> pipenv lock
+* lock current dependencies/versions to Pipfile.lock
+
+> pipenv install **ignore*pipfile
+* install newest versions of packages in Pipfile 
+
+=== Misc ===
+
+> pipenv check
+* check for security vulnerabilities
+
+> pipenv graph
+* show dependency tree
+
+> pipenv run python
+- launches python in pipenv environment while in shell 
