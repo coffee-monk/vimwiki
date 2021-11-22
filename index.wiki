@@ -1,4 +1,4 @@
-=== Mike's Vimwiki === 
+=== Vimwiki === 
 
 == Intro ==
 * [[Markup]] 
@@ -17,3 +17,6 @@
 == Python ==
 * [[pipenv]]
 * [[Django]]
+
+== Javascript ==
+* [[npm]]

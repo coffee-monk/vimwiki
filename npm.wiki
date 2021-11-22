@@ -1,0 +1,67 @@
+== NPM ==
+* node package manager for JS
+
+=== Install npm on OS ===
+
+> sudo apt install nodejs
+> sudo apt install npm
+
+=== Initialize ===
+
+> npm init
+* create package.json with inputted values
+
+> npm init -y
+* init package.json with no metadata
+
+=== Install Packages ===
+
+> npm install ${package}
+> npm i ${package}
+
+> npm i --save-dev ${package}
+* install as dev dependency
+
+> npm i --production
+* install packages except for dev dependencies 
+
+> npm i ${package}@3.0.0
+* install specific package version
+
+> npm i -g ${package}
+* install package globally
+
+=== Update Packages ===
+
+> npm update
+* update production packages
+
+> npm update ${package}
+* update specific package
+
+> npm update --dev
+* update dev packages
+
+> npm update -g
+* update global packages
+
+=== Uninstall Packages ===
+
+> npm uninstall ${package}
+
+> npm uninstall -g ${package}
+* uninstall global package
+
+=== Misc ===
+
+> npm list
+* list all installed packages
+
+> npm list -g --depth 0
+* list all globally installed packages
+
+> npm view
+* list latest versions of all packages
+
+> npm outdated
+* list packages that are outdated

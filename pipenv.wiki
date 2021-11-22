@@ -26,13 +26,13 @@
 * install python package, recorded in Pipfile
 * creates Pipfile.lock
 
-> pipenv lock *r
+> pipenv lock -r
 * show packages installed in Pipfile
 
 > pipenv uninstall ${package}
 * uninstalls package from Pipfile
 
-> pipenv install ${package} **dev
+> pipenv install ${package} --dev
 * install dev dependency
 
 > exit
@@ -42,7 +42,7 @@
 
 * requirements.txt = list of packages for installation
 
-> pipenv *r ./requirements.txt
+> pipenv -r ./requirements.txt
 * install package list
 
 === Lock dependencies ===
@@ -50,7 +50,7 @@
 > pipenv lock
 * lock current dependencies/versions to Pipfile.lock
 
-> pipenv install **ignore*pipfile
+> pipenv install --ignore-pipfile
 * install newest versions of packages in Pipfile 
 
 === Misc ===
