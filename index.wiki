@@ -3,8 +3,8 @@
 == Intro ==
 * [[Markup]] 
 * [[Keybindings]] 
-* ":h vimwiki-mappings"
-* ":h vimwiki-syntax-headers"
+* :h vimwiki-mappings
+* :h vimwiki-syntax-headers
 
 == Linux & DevOPs ==
 * [[SSH_Setup]]
@@ -13,6 +13,8 @@
 
 == Scribitz ==
 * [[Notes]]
+* [[Hours_Log]]
+* [[TestApp]]
 
 == Python ==
 * [[pipenv]]

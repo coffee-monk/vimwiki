@@ -1,17 +1,69 @@
 == Django ==
 
-== Install ==
+=== Install ===
+
 > pip install django
 
 === Start Project ===
+
 > django-admin startproject ${project_name}
-- creates folder named ${project_name} 
-- go into ${project_name} subdir to run manage.py processes
+* creates folder named ${project_name} 
+* go into ${project_name} subdir to run manage.py processes
 
 > python manage.py runserver 
-- runs the dev server
+* runs the dev server
 
-=== URL Request ===
-* urls.py => receive requests and fires callback
-* views.py => resolves callbacks
-* URLs use regex
+=== Create Apps ===
+
+* apps are the sub-components of the django app as a whole
+* each app is a folder structure under the top-level folder 
+
+> python manage.py startapp ${app}
+* create a new app directory and its files
+
+=== Migrate Models to Database ===
+
+> python manage.py migrate
+* migrate built-in models and initialize database
+* migrate custom migration for app
+
+> python manage.py makemigrations
+* create migrations folder for app
+
+=== Database ORM ===
+
+* ${class} can be found in models.py for each app dir
+
+> python manage.py shell
+* enter python shell for interacting with database
+* import migration into shell and interact with table
+
+>>> from $${app}.models import $${class}
+* import model
+
+>>> ${class}.objects.all()
+* return all rows of model table
+
+>>> $${instance} = $${class}()
+* create an instance of model class
+
+>>> $${instance}.$${property} = "test string"
+* define properties for model object
+
+>>> ${instance}.save()
+* save row instance of class to table
+
+>>> ${class}.objects.all()[0].{property}
+* retrieve class instance by index, & get property
+
+=== Admin ===
+
+* run the web server and visit the /admin/ route
+* no username/password exists by default
+
+> python manage.py createsuperuser
+* create username and password
+
+from .models import ${class}
+admin.site.register(${class})
+* go to app admin.py and import the model

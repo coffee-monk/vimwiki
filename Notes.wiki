@@ -7,3 +7,17 @@
 - copy scribitz website
 - where to store a video file (if it's secure store it on website)
 - need to store files somewhere
+
+=== Meeting - Nov 24, 2021 ===
+
+- timer app for first step (create live caption template)
+  - timer should be in Notion ideally 
+- Kim as assistant manager who collects course job data, she checks that the data template info is correct
+- green squares represent change of status on Notion admin page. Notion workflow updates should be automatic using Notion conditional statements.
+- Lucid Charts
+- if recorder cannot attend class, admin calls upon backup recorder
+- recorder will see which transcript editor does the Otter file in Notion, the recorder can upload the Otter file for the transcriptionist.
+- Notion uploads of more than 5mb requires paywall
+- Notion has conditional statements in the Formula/Edit Formula setup
+- get Quickbooks payments working
+- Edit Lucy's Flowchart in Lucid
