@@ -1,0 +1,39 @@
+== Typescript ==
+
+=== Install & Setup ===
+
+> sudo npm i -g typescript
+* install TS globally
+
+> tsc --init
+* creates tsconfig.json 
+
+=== Compile to JS ===
+
+> tsc
+* compile all tsc files in folder
+
+> tsc ${file}.ts
+* compiles file.ts to file.js
+
+> tsc --watch ${file}.ts
+* TS compiler restart after change
+
+=== tsconfig.json ===
+
+"outdir": "./dist"
+* compile into output directory
+
+"rootdir": "./src"
+* compile from source directory
+
+=== CODE ===
+
+> let id:number = 5
+
+=== React & Typescript ===
+
+> npx create-react-app . --template typescript 
+* create react app using typescript files
+* uses .ts and .tsx
+* replaces PropTypes

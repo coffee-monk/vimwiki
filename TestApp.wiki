@@ -1,8 +1,0 @@
-== Scribitz TestApp ==
-
-* Payment Scope (US Only?)
-
-* Client ID: ABoDTSLoooGVV5gF1goYyyO3j5X5stDYnggDAAoxTsYbQj9tDc
-* Client Secret: 3fVYdnPFqnhlH5slF1sfL80SivS90zl3q6ayajUq
-
-

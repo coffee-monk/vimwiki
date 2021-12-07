@@ -20,5 +20,6 @@
 * [[pipenv]]
 * [[Django]]
 
-== Javascript ==
+== Javascript & Typescript ==
 * [[npm]]
+* [[Typescript]]
