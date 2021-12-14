@@ -1,0 +1,50 @@
+== CURL ==
+
+=== GET ===
+
+> curl {{{url}}}
+* default GET request
+
+> curl -X GET {{{url}}}
+* explicit GET request
+
+=== POST ===
+
+> curl -X POST {{{url}}} -d '{{{"json": "json"}}}'
+> curl {{{url}}} -d '{{{"json": "json"}}}'
+* POST request with JSON data
+
+> curl {{{url}}} -d '{{{"json": "json"}}}' -H 'content-type: {{{header-type}}}'
+* set header with content-type, eg. 'application/json'
+
+> curl {{{url}}} -d @{{{file.txt}}} -H 'content-type: {{{header-type}}}'
+* send file as data content
+
+=== Verbose ===
+
+> curl -v {{{url}}}
+* return with request and response header data 
+
+> curl -s {{{url}}} -o /dev/null -w '%{ {{{ response-type }}}  }'
+* show only specific verbose output
+* send normal response data to /dev/null
+* then return selected data
+
+=== Authorization ===
+
+> curl {{{url}}} -u {{{username}}}:{{{password}}}
+* use curl built-in to send user/password
+
+> curl {{{url}}} -H "Authorization: Basic ${echo -n {{{user}}}:{{{pass}}} | base64}
+* long version of curl authorization request
+
+=== Inspect Headers ===
+
+> curl -I {{{url}}}
+* check headers by sending a HEAD request
+
+> curl -I {{{url}}} -X GET
+* check headers via GET request
+
+> curl -I {{{url}}} -X GET -L
+* follow link if page redirects
