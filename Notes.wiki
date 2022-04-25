@@ -21,3 +21,14 @@
 - Notion has conditional statements in the Formula/Edit Formula setup
 - get Quickbooks payments working
 - Edit Lucy's Flowchart in Lucid
+
+=== Edits ===
+
+- Contact Page
+  - remove "Ready to get Started" and "Join our team" sections
+
+- Main Page
+  - Your Audio Made Accessible
+  - Transcribing, Captions and Translating videos and live events"
+  - "any filetype" to "any file type"
+  - "Editing as needed" to "Suggest edits"

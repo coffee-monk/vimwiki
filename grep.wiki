@@ -1,0 +1,45 @@
+== GREP ==
+
+=== Basic Search ===
+
+> grep {{{search-term}}} {{{file}}}
+* search term in file, return lines with term
+
+> grep -r {{{search-term}}} .
+* search term in current directory files
+
+> grep -c {{{search-term}}} {{{file}}}
+* return word count
+
+> grep {{{regular-expression}}} {{{file}}}
+* search for regular expression
+* eg. > grep 'v.*' test.txt
+
+> grep -v {{{search-term}}} {{{file}}}
+* search for everything except search-term
+
+> grep -rni {{{search-term}}}
+* r - recursive (all files in cd)
+* n - print the line number
+* i - case-insensitive
+
+=== Returning lines with results ===
+
+> grep -C{{{number}}} {{{search-term}}} {{{file}}}
+* return results with number of lines above and below
+
+> grep -A{{{number}}} {{{search-term}}} {{{file}}}
+* return results with number of lines after only
+
+> grep -B{{{number}}} {{{search-term}}} {{{file}}}
+* return results with number of lines before only
+
+=== Pipe into grep ===
+
+> ls -lah | grep {{{search-term}}}
+* list files and grep results
+
+=== Time ===
+
+> time grep -cr {{{search-term}}} .
+* return time of grep process
